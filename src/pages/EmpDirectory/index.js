@@ -6,10 +6,13 @@ import EmpAddComponent from '../../components/EmpCRUD/EmpAddComponent';
 import EmpEditComponent from '../../components/EmpCRUD/EmpEditComponent';
 
 
+// base urls
+const localhost = 'http://localhost:8000/employeeRegistory/get';
+const server = 'https://employee-management-server-xa9m.onrender.com/employeeRegistory/get'
 
 const get_employeeData = async (set_EmpList) => {
   try {
-    const result = await axios.get('	http://localhost:8000/employeeRegistory/get')
+    const result = await axios.get(server)
     // console.log(result.data);
     set_EmpList(result.data);
   } catch (error) {
