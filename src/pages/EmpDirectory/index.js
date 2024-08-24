@@ -13,7 +13,7 @@ const server = 'https://employee-management-server-xa9m.onrender.com/employeeReg
 const get_employeeData = async (set_EmpList) => {
   try {
     const result = await axios.get(server)
-    // console.log(result.data);
+    console.log(result.data);
     set_EmpList(result.data);
   } catch (error) {
     console.error(error.message);
