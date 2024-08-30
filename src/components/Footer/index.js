@@ -2,7 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div
+      style={{
+        border: 'solid 1px gray',
+        padding: '20px',
+        display: 'flex',
+        justifyContent: 'center'
+      }}
+    >Footer</div>
   )
 }
 

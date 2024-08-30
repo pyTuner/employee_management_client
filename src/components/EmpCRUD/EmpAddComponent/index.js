@@ -1,8 +1,10 @@
 import React from 'react'
 
-const EmpAddComponent = () => {
+const EmpAddComponent = ({ setIsAdding }) => {
   return (
-    <div>EmpAddComponent</div>
+    <div
+      onClick={() => setIsAdding(false)}
+    >EmpAddComponent</div>
   )
 }
 

@@ -1,8 +1,13 @@
 import React from 'react'
 
-const EmpEditComponent = () => {
+
+const EmpEditComponent = ({ setIsEditing }) => {
+  console.log(setIsEditing)
   return (
-    <div>EmpEditComponent</div>
+    <div
+      onClick={() => setIsEditing(false)}
+    >EmpEditComponent
+    </div>
   )
 }
 

@@ -6,10 +6,10 @@ import EmpDirectory from "../pages/EmpDirectory";
 const Router = () => {
     return (
         <BrowserRouter basename="/">
-            <Routes>
-                <Route path="/login" Component={Login}/>
-                <Route path="/dashboard" Component={Dashboard}/>
-                <Route path="/" Component={EmpDirectory}/>
+            <Routes >
+                <Route path="/login" Component={Login} />
+                <Route path="/dashboard" Component={Dashboard} />
+                <Route path="/" Component={EmpDirectory} />
             </Routes>
         </BrowserRouter>
     )

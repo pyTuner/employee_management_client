@@ -37,8 +37,14 @@ const EmpDirectory = () => {
   }, []);
 
   // handle functions
-  const handle_EditEmployee = () => {
+  
+  const handle_AddEmployee = (value) => {
+    // handle add employee fn
+    set_IsAddEmployee(value);
+  }
+  const handle_EditEmployee = (value) => {
     // handle edit employee fn
+    set_IsEditEmployee(value);
   }
 
   const handle_DeleteEmployee = () => {
@@ -46,12 +52,23 @@ const EmpDirectory = () => {
   }
 
   return (
-    <div>
+    <div
+      styles={{ flex: 1 }}
+    >
+      {/* title */}
+      <div style={{
+        fontSize: 'xx-large',
+        color: 'rebeccapurple',
+        padding: '10px',
+        marginBottom: '20px',
+      }}>Employee Management Tab</div>
+
       {/* diplay table */}
       {!isAddEmployee && !isEditEmployee &&
         (
           <EmpTableComponent
             empList={employeeList}
+            handleAddEmp={handle_AddEmployee}
             handleEditEmp={handle_EditEmployee}
             handleDeleteEmp={handle_DeleteEmployee}
           />

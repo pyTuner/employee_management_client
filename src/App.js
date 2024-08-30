@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div >
+    <div style={{ display: 'flex',flexDirection: 'column', minHeight:'100vh'}}>
       <Header />
       <Router />
       <Footer />
