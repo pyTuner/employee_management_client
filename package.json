@@ -14,14 +14,17 @@
     "audit": "^0.0.6",
     "axios": "^1.7.4",
     "fix": "^0.0.3",
+    "formik": "^2.4.6",
     "moment": "^2.30.1",
     "npm": "^10.8.2",
     "react": "^18.3.1",
+    "react-datepicker": "^7.3.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "react-scripts": "^5.0.1",
     "sweetalert2": "^11.12.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
